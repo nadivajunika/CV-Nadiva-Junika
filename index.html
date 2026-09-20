@@ -14,10 +14,10 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Times New Roman", Times, serif;
             background: #e5e5e5;
             color: #111;
-            line-height: 1.45;
+            line-height: 1.4;
         }
 
         .cv-container {
@@ -70,10 +70,21 @@
             line-height: 1.8;
         }
 
+        .photo-frame {
+            width: 150px;
+            height: 180px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
         .profile-photo {
-            width: 145px;
-            height: 175px;
+            width: 170px;
+            height: 200px;
             object-fit: cover;
+            border: none;
+            outline: none;
+            display: block;
+            transform: translate(-10px, -10px);
         }
 
         section {
@@ -171,9 +182,15 @@
                 font-size: 22px;
             }
 
+            .photo-frame {
+                width: 115px;
+                height: 145px;
+            }
+
             .profile-photo {
-                width: 90px;
-                height: 110px;
+                width: 135px;
+                height: 165px;
+                transform: translate(-10px, -10px);
             }
 
             .item-header {
@@ -240,11 +257,13 @@
                     </div>
                 </div>
 
-                <img
-                    src="Nadiva Junika - 2025.png"
-                    alt="Foto Nadiva Junika"
-                    class="profile-photo"
-                >
+                <div class="photo-frame">
+                    <img
+                        src="Nadiva Junika - 2025.png"
+                        alt="Foto Nadiva Junika"
+                        class="profile-photo"
+                    >
+                </div>
             </header>
 
 
@@ -281,6 +300,7 @@
                         basis data, serta pengembangan sistem.
                     </p>
                 </div>
+
 
                 <div class="education-item">
                     <div class="item-header">
@@ -445,45 +465,16 @@
                 <h2 class="section-title">Keahlian</h2>
 
                 <div class="skill-list">
-                    <div class="skill-item">
-                        • Communication
-                    </div>
-
-                    <div class="skill-item">
-                        • Public Speaking
-                    </div>
-
-                    <div class="skill-item">
-                        • Teamwork
-                    </div>
-
-                    <div class="skill-item">
-                        • Coordination
-                    </div>
-
-                    <div class="skill-item">
-                        • Organization Management
-                    </div>
-
-                    <div class="skill-item">
-                        • Leadership
-                    </div>
-
-                    <div class="skill-item">
-                        • Time Management
-                    </div>
-
-                    <div class="skill-item">
-                        • Problem Solving
-                    </div>
-
-                    <div class="skill-item">
-                        • HTML, CSS, JavaScript
-                    </div>
-
-                    <div class="skill-item">
-                        • PHP, Java, MySQL
-                    </div>
+                    <div class="skill-item">• Communication</div>
+                    <div class="skill-item">• Public Speaking</div>
+                    <div class="skill-item">• Teamwork</div>
+                    <div class="skill-item">• Coordination</div>
+                    <div class="skill-item">• Organization Management</div>
+                    <div class="skill-item">• Leadership</div>
+                    <div class="skill-item">• Time Management</div>
+                    <div class="skill-item">• Problem Solving</div>
+                    <div class="skill-item">• HTML, CSS, JavaScript</div>
+                    <div class="skill-item">• PHP, Java, MySQL</div>
                 </div>
             </section>
 
@@ -536,6 +527,14 @@
                     secara individu maupun dalam tim, serta tertarik untuk
                     membantu mahasiswa lain dalam memahami materi praktikum.
                 </p>
+            </section>
+
+
+            <div class="footer">
+                Nadiva Junika Syafa Nasution — Curriculum Vitae
+            </div>
+
+        </section>
 
     </main>
 
