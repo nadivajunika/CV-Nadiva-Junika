@@ -1,597 +1,334 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CV | Nadiva Junika Syafa Nasution</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #eef1f6;
-            color: #333;
-            line-height: 1.7;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            background: white;
-            display: grid;
-            grid-template-columns: 280px 1fr;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
-            border-radius: 18px;
-            overflow: hidden;
-        }
-        .sidebar {
-            background: #172b4d;
-            color: white;
-            padding: 35px 25px;
-        }
-
-        .photo-wrapper {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .profile-photo {
-            width: 155px;
-            height: 155px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid white;
-            background: white;
-        }
-
-        .sidebar h1 {
-            font-size: 22px;
-            text-align: center;
-            line-height: 1.4;
-            margin-bottom: 10px;
-        }
-
-        .sidebar .position {
-            text-align: center;
-            font-size: 13px;
-            color: #d6deed;
-            margin-bottom: 25px;
-        }
-
-        .sidebar-section {
-            margin-top: 25px;
-        }
-
-        .sidebar-section h2 {
-            font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #7183a1;
-            padding-bottom: 8px;
-            margin-bottom: 12px;
-        }
-
-        .contact-item {
-            font-size: 13px;
-            margin-bottom: 12px;
-            overflow-wrap: anywhere;
-        }
-
-        .contact-item strong {
-            display: block;
-            color: #c8d4e8;
-            font-size: 12px;
-            margin-bottom: 2px;
-        }
-
-        .sidebar ul {
-            padding-left: 18px;
-        }
-
-        .sidebar li {
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-        .main-content {
-            padding: 40px;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section-title {
-            font-size: 21px;
-            color: #172b4d;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 2px solid #172b4d;
-            padding-bottom: 8px;
-            margin-bottom: 18px;
-        }
-
-        .profile {
-            text-align: justify;
-            font-size: 14px;
-            color: #555;
-        }
-
-        .item {
-            margin-bottom: 24px;
-            position: relative;
-        }
-
-        .item h3 {
-            font-size: 16px;
-            color: #172b4d;
-            line-height: 1.5;
-        }
-
-        .date {
-            color: #718096;
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-
-        .item p {
-            font-size: 14px;
-            color: #555;
-        }
-
-        .item ul {
-            padding-left: 20px;
-        }
-
-        .item li {
-            font-size: 14px;
-            margin-bottom: 6px;
-            color: #555;
-        }
-        .skill {
-            margin-bottom: 15px;
-        }
-
-        .skill strong {
-            display: block;
-            font-size: 14px;
-            color: #172b4d;
-            margin-bottom: 3px;
-        }
-
-        .skill p {
-            font-size: 13px;
-            color: #555;
-        }
-        footer {
-            text-align: center;
-            font-size: 12px;
-            color: #888;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-        }
-        @media (max-width: 800px) {
-
-            .container {
-                grid-template-columns: 1fr;
-                margin: 15px;
-                border-radius: 12px;
-            }
-
-            .sidebar {
-                padding: 35px 25px;
-            }
-
-            .main-content {
-                padding: 30px 25px;
-            }
-
-            .profile-photo {
-                width: 140px;
-                height: 140px;
-            }
-        }
-
-        @media (max-width: 400px) {
-
-            .sidebar h1 {
-                font-size: 20px;
-            }
-
-            .main-content {
-                padding: 25px 18px;
-            }
-
-            .section-title {
-                font-size: 18px;
-            }
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Nadiva Junika Syafa Nasution</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+    color: #000;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.cv-container {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 30px auto;
+    padding: 20mm;
+    background: #fff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #999;
+}
+.header-info {
+    flex: 1;
+}
+.header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+.subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.contact {
+    font-size: 11px;
+    line-height: 1.8;
+}
+.contact a {
+    color: #000;
+    text-decoration: none;
+}
+.photo-wrapper {
+    width: 115px;
+    height: 140px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+.section {
+    margin-top: 25px;
+}
+.section-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    margin-top: 5px;
+}
+.profile {
+    text-align: justify;
+    font-size: 12px;
+    line-height: 1.7;
+}
+.education-item,
+.experience-item,
+.achievement-item {
+    margin-bottom: 18px;
+}
+.education-item h3,
+.experience-item h3,
+.achievement-item h3 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.date {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+.education-item p,
+.achievement-item p {
+    font-size: 12px;
+}
+.experience-item ul {
+    padding-left: 17px;
+    margin-top: 3px;
+}
+.experience-item li {
+    font-size: 12px;
+    margin-bottom: 4px;
+    line-height: 1.6;
+}
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 12px;
+}
+.skill-item h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.skill-item p {
+    font-size: 11px;
+    line-height: 1.5;
+}
+footer {
+    margin-top: 25px;
+    padding-top: 12px;
+    border-top: 1px solid #aaa;
+    text-align: center;
+    font-size: 10px;
+    color: #555;
+}
+@media (max-width: 800px) {
+    body {
+        background: #fff;
+    }
+    .cv-container {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 30px 25px;
+    }
+    .header {
+        gap: 15px;
+    }
+    .header h1 {
+        font-size: 24px;
+    }
+    .photo-wrapper {
+        width: 95px;
+        height: 120px;
+    }
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    body {
+        background: #fff;
+    }
+    .cv-container {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 20mm;
+    }
+}
+</style>
 </head>
-
 <body>
-
-    <div class="container">
-        <aside class="sidebar">
-
-            <div class="photo-wrapper">
-
-                <img
-                    src="Nadiva Junika - 2025.png"
-                    alt="Foto Nadiva Junika Syafa Nasution"
-                    class="profile-photo"
-                >
-
-            </div>
-
-            <h1>Nadiva Junika Syafa Nasution</h1>
-
-            <p class="position">
-                Mahasiswa Sistem Informasi
-            </p>
-
-            <div class="sidebar-section">
-
-                <h2>Kontak</h2>
-
-                <div class="contact-item">
-                    <strong>Email</strong>
-                    nadivajunika2@gmail.com
-                </div>
-
-                <div class="contact-item">
-                    <strong>Telepon</strong>
-                    089526497390
-                </div>
-
-                <div class="contact-item">
-                    <strong>Lokasi</strong>
-                    Bekasi, Jln Flamboyan 2
-                </div>
-
-            </div>
-
-            <div class="sidebar-section">
-
-                <h2>Pendidikan</h2>
-
-                <div class="contact-item">
-                    <strong>2025 - Sekarang</strong>
-                    Telkom University Jakarta
-                    <br>
-                    Program Studi Sistem Informasi
-                </div>
-
-                <div class="contact-item">
-                    <strong>2021 - 2024</strong>
-                    SMK Telekomunikasi Telesandi Bekasi
-                    <br>
-                    Rekayasa Perangkat Lunak (RPL)
-                </div>
-
-            </div>
-
-            <div class="sidebar-section">
-
-                <h2>Keahlian</h2>
-
-                <ul>
-                    <li>Komunikasi & Public Speaking</li>
-                    <li>Kerja Sama Tim & Koordinasi</li>
-                    <li>Kepemimpinan</li>
-                    <li>Manajemen Waktu</li>
-                    <li>Problem Solving & Adaptasi</li>
-                    <li>Manajemen Organisasi</li>
-                </ul>
-
-            </div>
-
-        </aside>
-        <main class="main-content">
-
-
-            <!-- PROFIL -->
-
-            <section class="section">
-
-                <h2 class="section-title">
-                    Profil
-                </h2>
-
-                <p class="profile">
-
-                    Mahasiswa S1 Sistem Informasi Telkom University
-                    yang memiliki minat dalam bidang teknologi,
-                    pembelajaran, dan pengembangan diri. Memiliki
-                    pengalaman dalam organisasi, kepanitiaan, serta
-                    kegiatan yang melatih kemampuan komunikasi,
-                    kerja sama tim, dan tanggung jawab. Terbiasa
-                    bekerja secara terstruktur, mampu menyampaikan
-                    informasi dengan baik, serta memiliki kemauan
-                    untuk membantu dan berbagi pengetahuan. Siap
-                    berkontribusi sebagai Asisten Praktikum dengan
-                    bertanggung jawab, komunikatif.
-
-                </p>
-
-            </section>
-            <section class="section">
-
-                <h2 class="section-title">
-                    Pengalaman Organisasi
-                </h2>
-
-
-                <div class="item">
-
-                    <h3>
-                        Pengurus OSIS |
-                        SMK Telekomunikasi Telesandi Bekasi
-                    </h3>
-
-                    <p class="date">
-                        2022 - 2023
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Berpartisipasi dalam perencanaan,
-                            persiapan, dan pelaksanaan berbagai
-                            kegiatan sekolah.
-                        </li>
-
-                        <li>
-                            Bekerja sama dengan pengurus OSIS
-                            dalam menjalankan program kerja serta
-                            kepanitiaan sekolah.
-                        </li>
-
-                        <li>
-                            Mengembangkan kemampuan komunikasi,
-                            kerja sama tim, dan tanggung jawab
-                            melalui kegiatan organisasi.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h3>
-                        Panitia Masa Pengenalan Lingkungan Sekolah
-                        (MPLS)
-                    </h3>
-
-                    <p class="date">
-                        Juli 2023
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Membantu mempersiapkan serta memastikan
-                            kebutuhan kegiatan MPLS sebelum dan
-                            selama acara berlangsung.
-                        </li>
-
-                        <li>
-                            Mengarahkan, mendampingi, dan menjaga
-                            ketertiban peserta selama rangkaian
-                            kegiatan MPLS.
-                        </li>
-
-                        <li>
-                            Berkoordinasi dengan sesama panitia
-                            untuk mendukung kelancaran pelaksanaan
-                            kegiatan sesuai jadwal.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h3>
-                        Volunteer | KITA BISA
-                    </h3>
-
-                    <p class="date">
-                        April 2026
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Berpartisipasi dalam pelaksanaan
-                            kegiatan sosial di panti asuhan
-                            bersama tim volunteer.
-                        </li>
-
-                        <li>
-                            Berkoordinasi dengan sesama volunteer
-                            untuk memastikan kegiatan berjalan
-                            dengan tertib dan lancar.
-                        </li>
-
-                        <li>
-                            Membangun komunikasi yang baik serta
-                            menciptakan suasana yang positif
-                            selama kegiatan berlangsung.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h3>
-                        Panitia Lomba Badminton Tingkat SMP Sederajat
-                        | SMK Telekomunikasi Telesandi
-                    </h3>
-
-                    <p class="date">
-                        Oktober 2023
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Membantu pelaksanaan pertandingan
-                            sesuai jadwal yang telah ditentukan.
-                        </li>
-
-                        <li>
-                            Berkoordinasi dengan panitia dan peserta
-                            untuk menjaga kelancaran perlombaan.
-                        </li>
-
-                        <li>
-                            Menjaga ketertiban serta sportivitas
-                            selama pertandingan berlangsung.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </section>
-            <section class="section">
-
-                <h2 class="section-title">
-                    Pengalaman Kerja
-                </h2>
-
-
-                <div class="item">
-
-                    <h3>
-                        Asisten Administrasi |
-                        PT Dira Pratama Expressindo (PKL)
-                    </h3>
-
-                    <p class="date">
-                        Januari 2023 - April 2023
-                    </p>
-
-                    <ul>
-
-                        <li>
-                            Membantu menyelesaikan tugas dan
-                            administrasi sesuai arahan pembimbing
-                            dengan tepat waktu.
-                        </li>
-
-                        <li>
-                            Berkoordinasi dengan tim dalam
-                            mendukung operasional dan penyelesaian
-                            pekerjaan.
-                        </li>
-
-                        <li>
-                            Menunjukkan sikap disiplin, tanggung
-                            jawab, dan kemampuan beradaptasi
-                            di lingkungan kerja.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </section>
-            <section class="section">
-
-                <h2 class="section-title">
-                    Penghargaan & Prestasi
-                </h2>
-
-
-                <div class="item">
-
-                    <h3>
-                        Juara 1 Lomba Web Creation Competition
-                        SMA/SMK Sederajat
-                    </h3>
-
-                    <p class="date">
-                        2024
-                    </p>
-
-                    <p>
-                        Berhasil meraih Juara 1 dalam kompetisi
-                        pembuatan website tingkat SMA/SMK sederajat.
-                    </p>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h3>
-                        Juara 1 Lomba Debat Tingkat
-                        SMA/SMK Sederajat
-                    </h3>
-
-                    <p class="date">
-                        2022
-                    </p>
-
-                    <p>
-                        Berhasil meraih Juara 1 melalui kemampuan
-                        komunikasi, public speaking, berpikir
-                        kritis, dan penyampaian argumentasi
-                        secara efektif.
-                    </p>
-
-                </div>
-
-
-                <div class="item">
-
-                    <h3>
-                        Juara 2 Lomba Cerdas Cermat
-                        Tingkat SMA/SMK Sederajat
-                    </h3>
-
-                    <p class="date">
-                        2022
-                    </p>
-
-                    <p>
-                        Berhasil meraih Juara 2 melalui kemampuan
-                        berpikir kritis, kerja sama tim, dan
-                        pemecahan masalah.
-                    </p>
-
-                </div>
-
-            </section>
-
-            <footer>
-
-                © 2026 Nadiva Junika Syafa Nasution
-
-            </footer>
-
-        </main>
-
-    </div>
-
+<div class="cv-container">
+<header class="header">
+<div class="header-info">
+<h1>Nadiva Junika Syafa Nasution</h1>
+<p class="subtitle">Mahasiswa Sistem Informasi</p>
+<div class="contact">
+<div>Email: <a href="mailto:nadivajunika2@gmail.com">nadivajunika2@gmail.com</a></div>
+<div>Telepon: 089526497390</div>
+<div>Lokasi: Bekasi, Jln Flamboyan 2</div>
+</div>
+</div>
+<div class="photo-wrapper">
+<img src="Nadiva Junika - 2025.png" alt="Foto Nadiva Junika Syafa Nasution" class="profile-photo">
+</div>
+</header>
+
+<section class="section">
+<h2 class="section-title">Profil</h2>
+<p class="profile">
+Mahasiswa S1 Sistem Informasi Telkom University yang memiliki minat dalam kegiatan organisasi, pembelajaran, dan pengembangan diri. Memiliki pengalaman dalam organisasi, kepanitiaan, serta kegiatan yang melatih kemampuan komunikasi, kerja sama tim, dan tanggung jawab. Siap berkontribusi sebagai Asisten Praktikum dengan bertanggung jawab, komunikatif, dan mendukung proses pembelajaran praktikum.
+</p>
+</section>
+
+<section class="section">
+<h2 class="section-title">Pendidikan</h2>
+<div class="education-item">
+<h3>Telkom University Jakarta</h3>
+<p class="date">2025 - Sekarang</p>
+<p>Program Studi Sistem Informasi</p>
+</div>
+<div class="education-item">
+<h3>SMK Telekomunikasi Telesandi Bekasi</h3>
+<p class="date">2021 - 2024</p>
+<p>Rekayasa Perangkat Lunak (RPL)</p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Pengalaman Organisasi</h2>
+<div class="experience-item">
+<h3>Pengurus OSIS | SMK Telekomunikasi Telesandi Bekasi</h3>
+<p class="date">2022 - 2023</p>
+<ul>
+<li>Berpartisipasi dalam perencanaan, persiapan, dan pelaksanaan berbagai kegiatan sekolah.</li>
+<li>Bekerja sama dengan pengurus OSIS dalam menjalankan program kerja serta kepanitiaan sekolah.</li>
+<li>Mengembangkan kemampuan komunikasi, kerja sama tim, dan tanggung jawab melalui kegiatan organisasi.</li>
+</ul>
+</div>
+<div class="experience-item">
+<h3>Panitia Masa Pengenalan Lingkungan Sekolah (MPLS)</h3>
+<p class="date">Juli 2023</p>
+<ul>
+<li>Membantu mempersiapkan kebutuhan kegiatan MPLS sebelum dan selama acara berlangsung.</li>
+<li>Mengarahkan dan mendampingi peserta selama rangkaian kegiatan MPLS.</li>
+<li>Berkoordinasi dengan panitia untuk mendukung kelancaran kegiatan.</li>
+</ul>
+</div>
+<div class="experience-item">
+<h3>Volunteer | KITA BISA</h3>
+<p class="date">April 2026</p>
+<ul>
+<li>Berpartisipasi dalam pelaksanaan kegiatan sosial di panti asuhan bersama tim volunteer.</li>
+<li>Berkoordinasi dengan sesama volunteer untuk memastikan kegiatan berjalan dengan tertib.</li>
+<li>Membangun komunikasi yang baik selama kegiatan berlangsung.</li>
+</ul>
+</div>
+<div class="experience-item">
+<h3>Panitia Lomba Badminton Tingkat SMP Sederajat</h3>
+<p class="date">Oktober 2023</p>
+<ul>
+<li>Membantu pelaksanaan pertandingan sesuai jadwal yang ditentukan.</li>
+<li>Berkoordinasi dengan panitia dan peserta untuk menjaga kelancaran perlombaan.</li>
+<li>Menjaga ketertiban dan sportivitas selama pertandingan.</li>
+</ul>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Pengalaman Kerja</h2>
+<div class="experience-item">
+<h3>Asisten Administrasi | PT Dira Pratama Expressindo (PKL)</h3>
+<p class="date">Januari 2023 - April 2023</p>
+<ul>
+<li>Membantu menyelesaikan tugas administrasi sesuai arahan pembimbing.</li>
+<li>Berkoordinasi dengan tim dalam mendukung operasional pekerjaan.</li>
+<li>Menunjukkan sikap disiplin, tanggung jawab, dan kemampuan beradaptasi.</li>
+</ul>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Keahlian</h2>
+<div class="skills-list">
+<div class="skill-item">
+<h3>Komunikasi & Public Speaking</h3>
+<p>Mampu menyampaikan informasi dengan jelas dan percaya diri.</p>
+</div>
+<div class="skill-item">
+<h3>Kerja Sama Tim & Koordinasi</h3>
+<p>Mampu bekerja sama dan berkolaborasi dalam tim.</p>
+</div>
+<div class="skill-item">
+<h3>Manajemen Organisasi</h3>
+<p>Mampu mengelola tugas dan mendukung kegiatan organisasi.</p>
+</div>
+<div class="skill-item">
+<h3>Kepemimpinan</h3>
+<p>Mampu mengambil inisiatif dan bertanggung jawab.</p>
+</div>
+<div class="skill-item">
+<h3>Manajemen Waktu</h3>
+<p>Mampu mengatur prioritas dan menyelesaikan tugas tepat waktu.</p>
+</div>
+<div class="skill-item">
+<h3>Problem Solving & Adaptasi</h3>
+<p>Mampu beradaptasi dan menyelesaikan kendala.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Penghargaan & Prestasi</h2>
+<div class="achievement-item">
+<h3>Juara 1 Lomba Web Creation Competition</h3>
+<p class="date">2024</p>
+<p>Meraih Juara 1 dalam kompetisi pembuatan website tingkat SMA/SMK sederajat.</p>
+</div>
+<div class="achievement-item">
+<h3>Juara 1 Lomba Debat</h3>
+<p class="date">2022</p>
+<p>Meraih Juara 1 melalui kemampuan komunikasi, public speaking, dan berpikir kritis.</p>
+</div>
+<div class="achievement-item">
+<h3>Juara 2 Lomba Cerdas Cermat</h3>
+<p class="date">2022</p>
+<p>Meraih Juara 2 melalui kemampuan berpikir kritis dan kerja sama tim.</p>
+</div>
+</section>
+
+<footer>
+CV - Nadiva Junika Syafa Nasution
+</footer>
+</div>
 </body>
 </html>
